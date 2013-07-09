@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507DE178B98FB00C44194 /* UIKit.framework */; };
+		B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E0178B98FB00C44194 /* Foundation.framework */; };
+		B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E2178B98FB00C44194 /* CoreGraphics.framework */; };
+		B39507E9178B98FB00C44194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B39507E7178B98FB00C44194 /* InfoPlist.strings */; };
+		B39507EB178B98FB00C44194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507EA178B98FB00C44194 /* main.m */; };
+		B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507EE178B98FB00C44194 /* AppDelegate.m */; };
+		B39507F1178B98FB00C44194 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F0178B98FB00C44194 /* Default.png */; };
+		B39507F3178B98FB00C44194 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F2178B98FB00C44194 /* Default@2x.png */; };
+		B39507F5178B98FB00C44194 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F4178B98FB00C44194 /* Default-568h@2x.png */; };
+		B39507F8178B98FB00C44194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* ViewController.m */; };
+		B39507FB178B98FB00C44194 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39507F9178B98FB00C44194 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B39507DB178B98FB00C44194 /* PhotoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39507DE178B98FB00C44194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B39507E0178B98FB00C44194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B39507E2178B98FB00C44194 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B39507E6178B98FB00C44194 /* PhotoWall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoWall-Info.plist"; sourceTree = "<group>"; };
+		B39507E8178B98FB00C44194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B39507EA178B98FB00C44194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B39507EC178B98FB00C44194 /* PhotoWall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoWall-Prefix.pch"; sourceTree = "<group>"; };
+		B39507ED178B98FB00C44194 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B39507EE178B98FB00C44194 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B39507F0178B98FB00C44194 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B39507F2178B98FB00C44194 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B39507F4178B98FB00C44194 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B39507F6178B98FB00C44194 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B39507F7178B98FB00C44194 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B39507FA178B98FB00C44194 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39507D8178B98FB00C44194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */,
+				B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */,
+				B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B39507D2178B98FB00C44194 = {
+			isa = PBXGroup;
+			children = (
+				B39507E4178B98FB00C44194 /* PhotoWall */,
+				B39507DD178B98FB00C44194 /* Frameworks */,
+				B39507DC178B98FB00C44194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B39507DC178B98FB00C44194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B39507DB178B98FB00C44194 /* PhotoWall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B39507DD178B98FB00C44194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B39507DE178B98FB00C44194 /* UIKit.framework */,
+				B39507E0178B98FB00C44194 /* Foundation.framework */,
+				B39507E2178B98FB00C44194 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B39507E4178B98FB00C44194 /* PhotoWall */ = {
+			isa = PBXGroup;
+			children = (
+				B39507ED178B98FB00C44194 /* AppDelegate.h */,
+				B39507EE178B98FB00C44194 /* AppDelegate.m */,
+				B39507F6178B98FB00C44194 /* ViewController.h */,
+				B39507F7178B98FB00C44194 /* ViewController.m */,
+				B39507F9178B98FB00C44194 /* ViewController.xib */,
+				B39507E5178B98FB00C44194 /* Supporting Files */,
+			);
+			path = PhotoWall;
+			sourceTree = "<group>";
+		};
+		B39507E5178B98FB00C44194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B39507E6178B98FB00C44194 /* PhotoWall-Info.plist */,
+				B39507E7178B98FB00C44194 /* InfoPlist.strings */,
+				B39507EA178B98FB00C44194 /* main.m */,
+				B39507EC178B98FB00C44194 /* PhotoWall-Prefix.pch */,
+				B39507F0178B98FB00C44194 /* Default.png */,
+				B39507F2178B98FB00C44194 /* Default@2x.png */,
+				B39507F4178B98FB00C44194 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B39507DA178B98FB00C44194 /* PhotoWall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39507FE178B98FB00C44194 /* Build configuration list for PBXNativeTarget "PhotoWall" */;
+			buildPhases = (
+				B39507D7178B98FB00C44194 /* Sources */,
+				B39507D8178B98FB00C44194 /* Frameworks */,
+				B39507D9178B98FB00C44194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoWall;
+			productName = PhotoWall;
+			productReference = B39507DB178B98FB00C44194 /* PhotoWall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B39507D3178B98FB00C44194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andy Wang";
+			};
+			buildConfigurationList = B39507D6178B98FB00C44194 /* Build configuration list for PBXProject "PhotoWall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B39507D2178B98FB00C44194;
+			productRefGroup = B39507DC178B98FB00C44194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39507DA178B98FB00C44194 /* PhotoWall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39507D9178B98FB00C44194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39507E9178B98FB00C44194 /* InfoPlist.strings in Resources */,
+				B39507F1178B98FB00C44194 /* Default.png in Resources */,
+				B39507F3178B98FB00C44194 /* Default@2x.png in Resources */,
+				B39507F5178B98FB00C44194 /* Default-568h@2x.png in Resources */,
+				B39507FB178B98FB00C44194 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39507D7178B98FB00C44194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39507EB178B98FB00C44194 /* main.m in Sources */,
+				B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */,
+				B39507F8178B98FB00C44194 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B39507E7178B98FB00C44194 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39507E8178B98FB00C44194 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B39507F9178B98FB00C44194 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39507FA178B98FB00C44194 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B39507FC178B98FB00C44194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B39507FD178B98FB00C44194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B39507FF178B98FB00C44194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
+				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3950800178B98FB00C44194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
+				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B39507D6178B98FB00C44194 /* Build configuration list for PBXProject "PhotoWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39507FC178B98FB00C44194 /* Debug */,
+				B39507FD178B98FB00C44194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39507FE178B98FB00C44194 /* Build configuration list for PBXNativeTarget "PhotoWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39507FF178B98FB00C44194 /* Debug */,
+				B3950800178B98FB00C44194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B39507D3178B98FB00C44194 /* Project object */;
+}
