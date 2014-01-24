@@ -1,0 +1,502 @@
+TPhotoWall
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist PhotoWall/PhotoWall-Info.plist
+cProcessPCH /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth PhotoWall/PhotoWall-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o /Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o /Users/andywang/Developer/PhotoWall/PhotoWall/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall normal armv7s
+cGenerateDSYMFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall
+cCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png PhotoWall/Default@2x.png
+cCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png PhotoWall/Default.png
+cCopyStringsFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj/InfoPlist.strings PhotoWall/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png PhotoWall/Default-568h@2x.png
+cProcessProductPackaging "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision
+cTouch /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent
+cCodeSign /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000050ED385D0000000000000110
+t1357723741
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c00000000515094EE00000000000001A7
+t1364235502
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c00000000515094EE00000000000001E5
+t1364235502
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000515094EE000000000003AE00
+t1364235502
+s241152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000515094EF0000000000322700
+t1364235503
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000515094EF000000000062AD10
+t1364235503
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000515094EF00000000000015F7
+t1364235503
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000515094EF0000000000000E8D
+t1364235503
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000515094F100000000011BCDF0
+t1364235505
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c00000000515094F10000000000001B73
+t1364235505
+s7027
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o
+t1373477330
+s89368
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o
+t1373414230
+s69304
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o
+t1373477411
+s77696
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o
+t1373412872
+s71772
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWall.LinkFileList
+c0000000051DD99D200000000000003CF
+t1373477330
+s975
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o
+t1373477411
+s102716
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.o
+t1373416835
+s102224
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o
+t1373477330
+s3380
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent
+t1373410783
+s414
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth
+t1373410782
+s4606912
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+t1373477411
+s408
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM
+t1373477411
+s102
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png
+t1373410783
+s7014
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png
+t1373410783
+s3688
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png
+t1373410783
+s6316
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist
+t1373410782
+s1036
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall
+t1373477411
+s59728
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PkgInfo
+t1373410782
+s8
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist
+t1373410782
+s485
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision
+t1373410783
+s10710
+
+N/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj/InfoPlist.strings
+t1373410783
+s42
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.h
+c0000000051DD074A000000000000017A
+t1373439818
+s378
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m
+c0000000051DD076600000000000008E6
+t1373439846
+s2278
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/Default-568h@2x.png
+c000000005112E13A00000000000048A2
+t1360191802
+s18594
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/Default.png
+c000000005112E13A000000000000198C
+t1360191802
+s6540
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/Default@2x.png
+c000000005112E13A0000000000003EEB
+t1360191802
+s16107
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.h
+c0000000051DCA32A00000000000000F3
+t1373414186
+s243
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m
+c0000000051DCA07600000000000001DA
+t1373413494
+s474
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.h
+c0000000051DD9A700000000000000101
+t1373477488
+s257
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m
+c0000000051DD996C00000000000007E6
+t1373477228
+s2022
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.h
+c0000000051DC97FF00000000000000E5
+t1373411327
+s229
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m
+c0000000051DC9E08000000000000033C
+t1373412872
+s828
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWall-Prefix.pch
+c0000000051DB617B0000000000000141
+t1373331835
+s321
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.h
+c0000000051DD079A00000000000000E6
+t1373439898
+s230
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m
+c0000000051DD0BC5000000000000134A
+t1373440965
+s4938
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m
+c0000000051DCAD820000000000001347
+t1373416834
+s4935
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/en.lproj/InfoPlist.strings
+c0000000051DB617B000000000000002D
+t1373331835
+s45
+
+N/Users/andywang/Developer/PhotoWall/PhotoWall/main.m
+c0000000051DB617B000000000000014D
+t1373331835
+s333
+
+N/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision
+c0000000051DB1EBD00000000000029D6
+t1373314749
+s10710
+
+NPhotoWall/PhotoWall-Info.plist
+c0000000051DC4A5D000000000000048F
+t1373391453
+s1167
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m
+r0
+
+CBuild AST from /Users/andywang/Developer/PhotoWall/PhotoWall/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies503ae5f0d18db741^f279e5f0d18db741^---0#1#0#--18"Check dependencies36"E6464F1A-6C4F-4F04-ACC6-E4FC18B996E3-
+
+CCodeSign /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+s395170289.101434
+e395170289.236598
+r1
+xCodeSign
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"CodeSign DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app14091af1d18db741^9f913cf1d18db741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/0000000000000000^917"CodeSign DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app    cd /Users/andywang/Developer/PhotoWall    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign adca6e2a90c968532fcb0ee389759e9da6c66888 --resource-rules=/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist --entitlements /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app36"2EBCB44E-0B39-41AC-B924-A03C4781CA30-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o /Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395170130.583590
+e395170130.726868
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m10969552d18db741^b213ba52d18db741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m0000000000000000^3709"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o PhotoWall/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/AppDelegate.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/AppDelegate.o36"147F11D5-F5C6-49A8-8300-C6FEEB8F7D7E-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395107030.893269
+e395107030.940789
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m10c9e4d6da8cb741^b2d6f0d6da8cb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m0000000000000000^3758"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o PhotoWall/PhotoCell.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCell.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCell.o36"A57A2339-B7D3-40F1-A44F-8D8579414F1D-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395170288.920686
+e395170288.978591
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.ma6d2ebf0d18db741^5a84faf0d18db741^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m0000000000000000^3757"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o PhotoWall/PhotoCollectionView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoCollectionView.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoCollectionView.o36"76A77D60-87E7-4636-B30C-AB6D4066C5C2-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395105672.901075
+e395105672.958869
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m0bd0e688d58cb741^a777f588d58cb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m0000000000000000^3758"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o PhotoWall/PhotoView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoView.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoView.o36"CC182C22-6B68-4B49-948A-6160E73CFE35-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395170288.920664
+e395170288.988785
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.mc8d2ebf0d18db741^c020fdf0d18db741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m0000000000000000^3781"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o PhotoWall/PhotoWallViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWallViewController.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWallViewController.o36"D23EE43F-73A9-4438-84C2-8552558D266A-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.o /Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395109634.939570
+e395109635.010389
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m86aef002e58cb741^76a80203e58cb741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m0000000000000000^3788"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.o PhotoWall/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/ViewController.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/ViewController.o36"09EAB01C-4290-4CFF-840E-F7AFB8A0D3FE-
+
+CCompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o /Users/andywang/Developer/PhotoWall/PhotoWall/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395170130.583571
+e395170130.711790
+r1
+xCompileC
+xDerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o
+x/Users/andywang/Developer/PhotoWall/PhotoWall/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/andywang/Developer/PhotoWall/PhotoWall/main.mc8969552d18db741^2238b652d18db741^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/main.m0000000000000000^3667"CompileC DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o PhotoWall/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -include /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/main.m -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/main.o36"940EF1FD-5DAD-432A-8537-4FE15BAB59FE-
+
+CCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png PhotoWall/Default-568h@2x.png
+s395103583.014093
+e395103583.089872
+r1
+xCopyPNGFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png
+xPhotoWall/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"CopyPNGFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png PhotoWall/Default-568h@2x.png1db0035fcd8cb741^9701175fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/Default-568h@2x.png0000000000000000^730"CopyPNGFile "DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png" "PhotoWall/Default-568h@2x.png"    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/andywang/Developer/PhotoWall/PhotoWall/Default-568h@2x.png" "/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default-568h@2x.png"36"7169AFBC-F8ED-43C9-B83F-11762BFD2150-
+
+CCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png PhotoWall/Default.png
+s395103583.014061
+e395103583.054410
+r1
+xCopyPNGFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png
+xPhotoWall/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"CopyPNGFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png PhotoWall/Default.pngb7b3035fcd8cb741^c0ed0d5fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/Default.png0000000000000000^690"CopyPNGFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png PhotoWall/Default.png    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/andywang/Developer/PhotoWall/PhotoWall/Default.png /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default.png36"186B20CA-3C93-4C0B-8728-41543CDC34A0-
+
+CCopyPNGFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png PhotoWall/Default@2x.png
+s395103583.014062
+e395103583.081522
+r1
+xCopyPNGFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png
+xPhotoWall/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png PhotoWall/Default@2x.pngc8b3035fcd8cb741^bddf145fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/Default@2x.png0000000000000000^710"CopyPNGFile "DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png" "PhotoWall/Default@2x.png"    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/andywang/Developer/PhotoWall/PhotoWall/Default@2x.png" "/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Default@2x.png"36"A0DF45AA-B5C8-40B7-9F0C-6E56DCCDFE58-
+
+CCopyStringsFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj/InfoPlist.strings PhotoWall/en.lproj/InfoPlist.strings
+s395103583.014101
+e395103583.016584
+r1
+xCopyStringsFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj/InfoPlist.strings
+xPhotoWall/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy PhotoWall/en.lproj/InfoPlist.stringsa7af035fcd8cb741^fb3e045fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/en.lproj/InfoPlist.strings0000000000000000^679"CopyStringsFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj/InfoPlist.strings PhotoWall/en.lproj/InfoPlist.strings    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/en.lproj -- PhotoWall/en.lproj/InfoPlist.strings36"51A08204-88F9-4CF2-896F-4C00E61AEB2E-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist
+s395103582.481234
+e395103582.483408
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xDerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plistae457b5ecd8cb741^df357c5ecd8cb741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist000000000080d041^847"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app36"8A9878B4-FB5C-47F2-971D-A7B6D072A8B0-
+
+CGenerateDSYMFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall
+s395170289.024136
+e395170289.047295
+r1
+xGenerateDSYMFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Generate /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM214006f1d18db741^501c0cf1d18db741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM/0000000000000000^717"GenerateDSYMFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app.dSYM36"FE0898F5-DC97-48EA-B567-C4864AC472CE-
+
+CLd /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall normal armv7s
+s395170288.995174
+e395170289.017329
+r1
+xLd
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall
+xnormal
+xarmv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Link /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall56d6fef0d18db741^ef6f04f1d18db741^---0#0#0#--1221"Ld DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall normal armv7s    cd /Users/andywang/Developer/PhotoWall    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos -filelist /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/Objects-normal/armv7s/PhotoWall.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework AssetsLibrary -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PhotoWall36"B309B1A1-0803-453F-95AD-F160F003F7B0-
+
+CProcessInfoPlistFile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist PhotoWall/PhotoWall-Info.plist
+s395103582.481252
+e395103582.485971
+r1
+xProcessInfoPlistFile
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist
+xPhotoWall/PhotoWall-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process PhotoWall/PhotoWall-Info.plistdc467b5ecd8cb741^98687c5ecd8cb741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWall-Info.plist0000000000000000^915"ProcessInfoPlistFile DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist PhotoWall/PhotoWall-Info.plist    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-infoPlistUtility PhotoWall/PhotoWall-Info.plist -genpkginfo /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/ResourceRules.plist -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/Info.plist36"072C834F-9BD7-4E38-A976-6C893BD381E6-
+
+CProcessPCH /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth PhotoWall/PhotoWall-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s395103582.495264
+e395103582.731033
+r1
+xProcessPCH
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth
+xPhotoWall/PhotoWall-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile PhotoWall/PhotoWall-Prefix.pchf2077f5ecd8cb741^6727bb5ecd8cb741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWall-Prefix.pch0000000000000000^3644"ProcessPCH DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth PhotoWall/PhotoWall-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andywang/Developer/PhotoWall    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-generated-files.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-own-target-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-all-target-headers.hmap -iquote /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall-project-headers.hmap -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources/armv7s -I/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/DerivedSources -F/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.dia -c /Users/andywang/Developer/PhotoWall/PhotoWall/PhotoWall-Prefix.pch -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.pth -MMD -MT dependencies -MF /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PrecompiledHeaders/PhotoWall-Prefix-ekotqptnnlbladhfwwkoynxfkcfd/PhotoWall-Prefix.pch.d36"2633A415-E762-4367-B3EF-48C097F7BCB1-
+
+CProcessPCH /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Index/PrecompiledHeaders/PhotoWall-Prefix-fqejjiaptgaufygfhbnnulmyltag_ast/PhotoWall-Prefix.pch.pth PhotoWall/PhotoWall-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision
+s395103583.128561
+e395103583.130791
+r1
+xProcessProductPackaging
+x/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection228"ProcessProductPackaging "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovisiond2fd205fcd8cb741^ab7a215fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision0000000000000000^801"ProcessProductPackaging "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-productPackagingUtility "/Users/andywang/Library/MobileDevice/Provisioning Profiles/B2C5B146-CAD6-49FB-BC89-988EF41BBF35.mobileprovision" -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app/embedded.mobileprovision36"165EEFD7-48B8-41BE-8CA7-4F0D80038223-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent
+s395103583.152226
+e395103583.155004
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection249"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent4418275fcd8cb741^68ae275fcd8cb741^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent000000000080d041^869"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/andywang/.nvm/v0.8.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Intermediates/PhotoWall.build/Debug-iphoneos/PhotoWall.build/PhotoWall.xcent36"D8ECC714-9852-49E4-A57F-7224123CB8B9-
+
+CTouch /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+s395170289.080749
+e395170289.085904
+r1
+xTouch
+x/Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app41ba14f1d18db741^acfd15f1d18db741^---0#0#0#--427"Touch DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app    cd /Users/andywang/Developer/PhotoWall    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/andywang/Developer/PhotoWall/DerivedData/PhotoWall/Build/Products/Debug-iphoneos/PhotoWall.app36"8B951BE6-05D9-497E-872C-E454EE37DA1D-
+

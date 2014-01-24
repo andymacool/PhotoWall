@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3110FFF1891BE6C00045A86 /* PhotoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */; };
+		B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110011891D23600045A86 /* PhotoClustersViewController.m */; };
+		B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110041891D67F00045A86 /* ClusterCollectionCell.m */; };
 		B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507DE178B98FB00C44194 /* UIKit.framework */; };
 		B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E0178B98FB00C44194 /* Foundation.framework */; };
 		B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E2178B98FB00C44194 /* CoreGraphics.framework */; };
@@ -16,11 +19,18 @@
 		B39507F1178B98FB00C44194 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F0178B98FB00C44194 /* Default.png */; };
 		B39507F3178B98FB00C44194 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F2178B98FB00C44194 /* Default@2x.png */; };
 		B39507F5178B98FB00C44194 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B39507F4178B98FB00C44194 /* Default-568h@2x.png */; };
-		B39507F8178B98FB00C44194 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* ViewController.m */; };
-		B39507FB178B98FB00C44194 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39507F9178B98FB00C44194 /* ViewController.xib */; };
+		B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* PhotoGridViewController.m */; };
+		B3950802178B992C00C44194 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3950801178B992C00C44194 /* AssetsLibrary.framework */; };
+		B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoFetcher.h; sourceTree = "<group>"; };
+		B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoFetcher.m; sourceTree = "<group>"; };
+		B31110001891D23600045A86 /* PhotoClustersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoClustersViewController.h; sourceTree = "<group>"; };
+		B31110011891D23600045A86 /* PhotoClustersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoClustersViewController.m; sourceTree = "<group>"; };
+		B31110031891D67F00045A86 /* ClusterCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterCollectionCell.h; sourceTree = "<group>"; };
+		B31110041891D67F00045A86 /* ClusterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCell.m; sourceTree = "<group>"; };
 		B39507DB178B98FB00C44194 /* PhotoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39507DE178B98FB00C44194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B39507E0178B98FB00C44194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +44,11 @@
 		B39507F0178B98FB00C44194 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B39507F2178B98FB00C44194 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B39507F4178B98FB00C44194 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B39507F6178B98FB00C44194 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B39507F7178B98FB00C44194 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B39507FA178B98FB00C44194 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B39507F6178B98FB00C44194 /* PhotoGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoGridViewController.h; sourceTree = "<group>"; };
+		B39507F7178B98FB00C44194 /* PhotoGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoGridViewController.m; sourceTree = "<group>"; };
+		B3950801178B992C00C44194 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
+		B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3950802178B992C00C44194 /* AssetsLibrary.framework in Frameworks */,
 				B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */,
 				B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */,
 				B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +66,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3110FFA1891AC3F00045A86 /* Grid CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B39507F6178B98FB00C44194 /* PhotoGridViewController.h */,
+				B39507F7178B98FB00C44194 /* PhotoGridViewController.m */,
+			);
+			name = "Grid CollectionView";
+			sourceTree = "<group>";
+		};
+		B3110FFB1891AC5200045A86 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */,
+				B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */,
+			);
+			name = CollectionCell;
+			sourceTree = "<group>";
+		};
+		B3110FFC1891AC5D00045A86 /* Nested CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B31110001891D23600045A86 /* PhotoClustersViewController.h */,
+				B31110011891D23600045A86 /* PhotoClustersViewController.m */,
+				B31110031891D67F00045A86 /* ClusterCollectionCell.h */,
+				B31110041891D67F00045A86 /* ClusterCollectionCell.m */,
+			);
+			name = "Nested CollectionView";
+			sourceTree = "<group>";
+		};
 		B39507D2178B98FB00C44194 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +118,7 @@
 				B39507DE178B98FB00C44194 /* UIKit.framework */,
 				B39507E0178B98FB00C44194 /* Foundation.framework */,
 				B39507E2178B98FB00C44194 /* CoreGraphics.framework */,
+				B3950801178B992C00C44194 /* AssetsLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +128,11 @@
 			children = (
 				B39507ED178B98FB00C44194 /* AppDelegate.h */,
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
-				B39507F6178B98FB00C44194 /* ViewController.h */,
-				B39507F7178B98FB00C44194 /* ViewController.m */,
-				B39507F9178B98FB00C44194 /* ViewController.xib */,
+				B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */,
+				B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */,
+				B3110FFA1891AC3F00045A86 /* Grid CollectionView */,
+				B3110FFC1891AC5D00045A86 /* Nested CollectionView */,
+				B3110FFB1891AC5200045A86 /* CollectionCell */,
 				B39507E5178B98FB00C44194 /* Supporting Files */,
 			);
 			path = PhotoWall;
@@ -162,7 +207,6 @@
 				B39507F1178B98FB00C44194 /* Default.png in Resources */,
 				B39507F3178B98FB00C44194 /* Default@2x.png in Resources */,
 				B39507F5178B98FB00C44194 /* Default-568h@2x.png in Resources */,
-				B39507FB178B98FB00C44194 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */,
 				B39507EB178B98FB00C44194 /* main.m in Sources */,
 				B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */,
-				B39507F8178B98FB00C44194 /* ViewController.m in Sources */,
+				B3110FFF1891BE6C00045A86 /* PhotoFetcher.m in Sources */,
+				B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */,
+				B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */,
+				B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +236,6 @@
 				B39507E8178B98FB00C44194 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B39507F9178B98FB00C44194 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B39507FA178B98FB00C44194 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -226,7 +266,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -250,7 +290,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -263,7 +303,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
 				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,7 +316,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
 				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +342,7 @@
 				B3950800178B98FB00C44194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
