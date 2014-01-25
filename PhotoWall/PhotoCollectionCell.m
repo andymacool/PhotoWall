@@ -17,7 +17,7 @@
 
 + (CGFloat)preferredSizeInCluster
 {
-    return 150;
+    return 200;
 }
 
 + (NSString *)reuseID

@@ -10,6 +10,7 @@
 #import "ClusterCollectionCell.h"
 #import "PhotoCollectionCell.h"
 #import "PhotoFetcher.h"
+#import "FastScroller.h"
 
 static const CGFloat kMinInterLineSpacing = 5.0;
 static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
@@ -33,16 +34,35 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
 {
     [super viewDidLoad];
     
-    // assume that PhotoFetcher has fetched
-    
+    // install the collection view
+    //
     UICollectionViewLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+
+    CGRect f = self.view.bounds;
+    f.size.width = 5 * f.size.width;
+    f.size.height = 5 * f.size.height;
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:f collectionViewLayout:flowLayout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
     [self.collectionView registerClass:[ClusterCollectionCell class] forCellWithReuseIdentifier:[ClusterCollectionCell reuseID]];
     [self.view addSubview:self.collectionView];
     
+    // install the scroller
+    //
+    CGFloat x, y, w, h;
+    w = 40.0;
+    h = self.view.bounds.size.height;
+    x = self.view.bounds.size.width - w;
+    y = 0;
+    
+    FastScroller *scroller = [[FastScroller alloc] initWithFrame:CGRectMake(x, y, w, h)];
+    scroller.scrollPeer = self.collectionView;
+    [self.view addSubview:scroller];
+    
+    // start fetching
+    //
     [[PhotoFetcher sharedInstance] fetchLibraryPhotosWithProgress:nil
                                                     andCompletion:^{
                                                         dispatch_async(dispatch_get_main_queue(), ^{
@@ -54,7 +74,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"MEMORY WARNING !!!!!!!\n");
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -81,7 +101,19 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     return cell;
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
+                                   referenceSizeForFooterInSection:(NSInteger)section
+{
+    CGRect f = self.view.bounds;
+    f.size.height = 4 * f.size.height;
+    return f.size;
+}
+
 #pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 
 #pragma mark - UICollectionViewDelegateFlowLayout
@@ -90,9 +122,9 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = [PhotoCollectionCell preferredSizeInCluster];
-    CGFloat width = self.view.bounds.size.width;
-    
+    CGFloat height, width;
+    height = [PhotoCollectionCell preferredSizeInCluster];
+    width  = self.collectionView.bounds.size.width;
     return CGSizeMake(width, height);
 }
 
@@ -116,8 +148,6 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return kMinInterItemSpacing;
 }
-
-
 
 
 @end

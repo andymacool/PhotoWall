@@ -13,8 +13,8 @@
 @property (nonatomic) UIImageView *imageView;
 
 // assume square shape
-+ (CGFloat)preferredSizeInCluster;
 + (CGFloat)preferredSizeInGrid;
++ (CGFloat)preferredSizeInCluster;
 
 + (NSString *)reuseID;
 

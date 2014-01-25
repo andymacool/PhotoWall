@@ -14,6 +14,7 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
 
 @interface ClusterCollectionCell () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic) UICollectionView *collectionView;
+@property (nonatomic) CGSize  cellSize; // inner
 @property (nonatomic) NSArray *cluster;
 @end
 
@@ -53,6 +54,11 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     [_collectionView reloadData];
 }
 
+- (void)setCellSize:(CGSize)cellSize
+{
+    _cellSize = cellSize;
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -73,6 +79,14 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     cell.imageView.image = image;
     
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
+referenceSizeForFooterInSection:(NSInteger)section
+{
+    CGRect f = self.bounds;
+    f.size.width = 4 * 320;
+    return f.size;
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout

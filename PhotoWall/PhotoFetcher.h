@@ -18,7 +18,6 @@ typedef void (^PhotoFetcherCompletionBlock) (void);
 @property (nonatomic, readonly) NSArray *clusters;   // pre-built 20 clusters
 @property (nonatomic, readonly) NSArray *thumbnails; // of UIImage of thumbnails
 
-
 + (instancetype) sharedInstance;
 
 - (void) fetchLibraryPhotosWithProgress:(PhotoFetcherProgressBlock)progress

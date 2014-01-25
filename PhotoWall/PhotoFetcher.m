@@ -9,7 +9,7 @@
 #import "PhotoFetcher.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-const NSUInteger kNumOfTotalClusters   = 20;
+const NSUInteger kNumOfTotalClusters   = 50;
 const NSUInteger kNumOfPhotosInCluster = 20;
 
 @interface PhotoFetcher ()
