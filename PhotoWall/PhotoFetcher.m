@@ -17,6 +17,7 @@ const NSUInteger kNumOfPhotosInCluster = 20;
 @property (nonatomic) NSMutableArray  *mThumbnails; // of UIImage of thumbnails
 @property (nonatomic) NSMutableArray  *mAssets;     // of ALAssets
 @property (nonatomic) NSMutableArray  *mClusters;   // of NSArray of thumbnails
+@property (nonatomic) NSMutableArray  *mClusterSnapshots;
 @end
 
 @implementation PhotoFetcher
@@ -39,6 +40,7 @@ const NSUInteger kNumOfPhotosInCluster = 20;
         _mAssets = [NSMutableArray new];
         _mClusters = [NSMutableArray new];
         _mThumbnails = [NSMutableArray new];
+        _mClusterSnapshots = [NSMutableArray new];
     }
     return self;
 }
@@ -58,6 +60,11 @@ const NSUInteger kNumOfPhotosInCluster = 20;
 - (NSArray *)clusters
 {
     return [_mClusters copy];
+}
+
+- (NSArray *)clusterSnapshots
+{
+    return [_mClusterSnapshots copy];
 }
 
 - (ALAssetsLibrary *)assetsLibrary
@@ -192,9 +199,44 @@ const NSUInteger kNumOfPhotosInCluster = 20;
             NSRange range = NSMakeRange(kNumOfPhotosInCluster*i, kNumOfPhotosInCluster);
             NSArray *cluster = [_mThumbnails subarrayWithRange:range];
             [_mClusters addObject:cluster];
+            [self buildSnapshotFromCluster:cluster];
         }
     }
 }
 
+- (void)buildSnapshotFromCluster:(NSArray *)cluster
+{
+    // pick first 10 images from a cluster
+    // and compose them into a bigger image.
+    
+    NSAssert(kNumOfPhotosInCluster > 10, @"ERROR, Cannot compose a big snapshot !\n");
+    
+    CGSize size = CGSizeMake(320, 40);
+
+    UIGraphicsBeginImageContext(size);
+    
+    for (int i = 0; i < 8; i++)
+    {
+        UIImage *img = [cluster objectAtIndex:i];
+        
+        UIImage *smallImg = [self imageWithImage:img scaledToSize:CGSizeMake(40, 40)];
+        
+        [smallImg drawInRect:CGRectMake(i*smallImg.size.width, 0, smallImg.size.width, smallImg.size.height)];
+    }
+    
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [_mClusterSnapshots addObject:finalImage];
+}
+
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize
+{
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 @end

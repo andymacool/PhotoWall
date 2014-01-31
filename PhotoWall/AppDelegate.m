@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PhotoGridViewController.h"
 #import "PhotoClustersViewController.h"
+#import "DebugViewController.h"
 
 @implementation AppDelegate
 
@@ -19,7 +20,11 @@
 #define SHOW_CLUSTERS_ONLY
 #ifdef  SHOW_CLUSTERS_ONLY
     PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];
-    self.window.rootViewController = photoClustersVC;
+    DebugViewController *debugVC = [[DebugViewController alloc] init];
+    
+    UITabBarController *rootTab = [[UITabBarController alloc] init];
+    [rootTab setViewControllers:@[photoClustersVC,debugVC]];
+    self.window.rootViewController = rootTab;
 #else
     PhotoGridViewController     *photoGridVC = [[PhotoGridViewController alloc] init];
     PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];

@@ -11,6 +11,8 @@
 		B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110011891D23600045A86 /* PhotoClustersViewController.m */; };
 		B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110041891D67F00045A86 /* ClusterCollectionCell.m */; };
 		B31110091891F58B00045A86 /* FastScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110081891F58B00045A86 /* FastScroller.m */; };
+		B3697D751896E1DB007B9B87 /* FastScrollerThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */; };
+		B3697D781896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */; };
 		B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507DE178B98FB00C44194 /* UIKit.framework */; };
 		B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E0178B98FB00C44194 /* Foundation.framework */; };
 		B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E2178B98FB00C44194 /* CoreGraphics.framework */; };
@@ -23,6 +25,7 @@
 		B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* PhotoGridViewController.m */; };
 		B3950802178B992C00C44194 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3950801178B992C00C44194 /* AssetsLibrary.framework */; };
 		B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */; };
+		B3C4656B189B3784003ED57E /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C4656A189B3784003ED57E /* DebugViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,10 @@
 		B31110041891D67F00045A86 /* ClusterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCell.m; sourceTree = "<group>"; };
 		B31110071891F58B00045A86 /* FastScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScroller.h; sourceTree = "<group>"; };
 		B31110081891F58B00045A86 /* FastScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScroller.m; sourceTree = "<group>"; };
+		B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScrollerThumb.h; sourceTree = "<group>"; };
+		B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScrollerThumb.m; sourceTree = "<group>"; };
+		B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterCollectionCellHeaderView.h; sourceTree = "<group>"; };
+		B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCellHeaderView.m; sourceTree = "<group>"; };
 		B39507DB178B98FB00C44194 /* PhotoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39507DE178B98FB00C44194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B39507E0178B98FB00C44194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +59,8 @@
 		B3950801178B992C00C44194 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
 		B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
+		B3C46569189B3784003ED57E /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
+		B3C4656A189B3784003ED57E /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,8 @@
 				B31110011891D23600045A86 /* PhotoClustersViewController.m */,
 				B31110031891D67F00045A86 /* ClusterCollectionCell.h */,
 				B31110041891D67F00045A86 /* ClusterCollectionCell.m */,
+				B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */,
+				B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */,
 			);
 			name = "Nested CollectionView";
 			sourceTree = "<group>";
@@ -103,6 +114,8 @@
 			children = (
 				B31110071891F58B00045A86 /* FastScroller.h */,
 				B31110081891F58B00045A86 /* FastScroller.m */,
+				B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */,
+				B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */,
 			);
 			name = Scroller;
 			sourceTree = "<group>";
@@ -142,6 +155,8 @@
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
 				B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */,
 				B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */,
+				B3C46569189B3784003ED57E /* DebugViewController.h */,
+				B3C4656A189B3784003ED57E /* DebugViewController.m */,
 				B3110FFA1891AC3F00045A86 /* Grid CollectionView */,
 				B3110FFC1891AC5D00045A86 /* Nested CollectionView */,
 				B3110FFB1891AC5200045A86 /* CollectionCell */,
@@ -232,8 +247,11 @@
 			files = (
 				B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */,
 				B39507EB178B98FB00C44194 /* main.m in Sources */,
+				B3697D751896E1DB007B9B87 /* FastScrollerThumb.m in Sources */,
 				B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */,
+				B3697D781896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m in Sources */,
 				B3110FFF1891BE6C00045A86 /* PhotoFetcher.m in Sources */,
+				B3C4656B189B3784003ED57E /* DebugViewController.m in Sources */,
 				B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */,
 				B31110091891F58B00045A86 /* FastScroller.m in Sources */,
 				B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */,

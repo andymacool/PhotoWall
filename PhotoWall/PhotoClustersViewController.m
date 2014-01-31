@@ -17,6 +17,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
 
 @interface PhotoClustersViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic) UICollectionView *collectionView;
+@property (nonatomic) UIProgressView   *progressView;
 @end
 
 @implementation PhotoClustersViewController
@@ -35,24 +36,25 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     [super viewDidLoad];
     
     // install the collection view
-    //
+    
     UICollectionViewLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 
     CGRect f = self.view.bounds;
-    f.size.width = 5 * f.size.width;
-    f.size.height = 5 * f.size.height;
+    f.size.width = 1 * f.size.width;
+    f.size.height = 1 * f.size.height;
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:f collectionViewLayout:flowLayout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    
+
     [self.collectionView registerClass:[ClusterCollectionCell class] forCellWithReuseIdentifier:[ClusterCollectionCell reuseID]];
     [self.view addSubview:self.collectionView];
     
+    
     // install the scroller
-    //
+    
     CGFloat x, y, w, h;
-    w = 40.0;
+    w = 20.0;
     h = self.view.bounds.size.height;
     x = self.view.bounds.size.width - w;
     y = 0;
@@ -61,21 +63,28 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     scroller.scrollPeer = self.collectionView;
     [self.view addSubview:scroller];
     
+    // install the progress view
+    /*
+    x = 20;
+    w = self.view.bounds.size.width - 2 * x;
+    y = self.view.bounds.size.height / 2;
+    h = 10.0;
+    self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(x, y, w, h)];
+    [self.view addSubview:self.progressView];
+    */
+    
     // start fetching
-    //
-    [[PhotoFetcher sharedInstance] fetchLibraryPhotosWithProgress:nil
-                                                    andCompletion:^{
-                                                        dispatch_async(dispatch_get_main_queue(), ^{
-                                                            [self.collectionView reloadData];
-                                                        });
-                                                    }];
+
+    [[PhotoFetcher sharedInstance] fetchLibraryPhotosWithProgress:^(double progress) {
+        
+    } andCompletion:^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
+    }];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    NSLog(@"MEMORY WARNING !!!!!!!\n");
-}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -95,19 +104,26 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     
     NSArray *cluster = [[PhotoFetcher sharedInstance].clusters objectAtIndex:indexPath.item];
     
-    // hand off the data to lower level
-    [cell buildCellUIWithCluster:cluster];
+    NSLog(@"cellForItemAtIndexPath %d with tag %d \n", indexPath.row, collectionView.tag);
     
+    // hand off the data to lower level
+    if (collectionView.tag == 99) {
+        UIImage *image = [[PhotoFetcher sharedInstance].clusterSnapshots objectAtIndex:indexPath.item];
+        cell.snapshotImageView.image = image;
+    } else {
+        cell.snapshotImageView.image = nil;
+        [cell buildCellUIWithCluster:cluster];
+    }
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
-                                   referenceSizeForFooterInSection:(NSInteger)section
-{
-    CGRect f = self.view.bounds;
-    f.size.height = 4 * f.size.height;
-    return f.size;
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
+//                                   referenceSizeForFooterInSection:(NSInteger)section
+//{
+//    CGRect f = self.view.bounds;
+//    f.size.height = 4 * f.size.height;
+//    return f.size;
+//}
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -125,6 +141,11 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     CGFloat height, width;
     height = [PhotoCollectionCell preferredSizeInCluster];
     width  = self.collectionView.bounds.size.width;
+    
+    if (self.collectionView.tag == 99) {
+        return CGSizeMake(320, 40);
+    }
+    
     return CGSizeMake(width, height);
 }
 

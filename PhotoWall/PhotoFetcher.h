@@ -17,6 +17,7 @@ typedef void (^PhotoFetcherCompletionBlock) (void);
 @property (nonatomic, readonly) NSArray *assets;     // of ALAssets
 @property (nonatomic, readonly) NSArray *clusters;   // pre-built 20 clusters
 @property (nonatomic, readonly) NSArray *thumbnails; // of UIImage of thumbnails
+@property (nonatomic, readonly) NSArray *clusterSnapshots;  // composed snapshot
 
 + (instancetype) sharedInstance;
 

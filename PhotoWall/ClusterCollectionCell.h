@@ -10,8 +10,13 @@
 
 @interface ClusterCollectionCell : UICollectionViewCell
 
+@property (nonatomic) UIImageView   *snapshotImageView;
+@property (nonatomic) UICollectionView *collectionView;
+
 + (NSString *)reuseID;
 
 - (void)buildCellUIWithCluster:(NSArray *)cluster;
+
+- (void)updateSnapshotImageView;
 
 @end

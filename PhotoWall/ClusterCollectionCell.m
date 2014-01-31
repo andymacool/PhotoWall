@@ -8,12 +8,13 @@
 
 #import "ClusterCollectionCell.h"
 #import "PhotoCollectionCell.h"
+#import "PhotoFetcher.h"
+#import "ClusterCollectionCellHeaderView.h"
 
 static const CGFloat kMinInterLineSpacing = 5.0;
 static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
 
 @interface ClusterCollectionCell () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
-@property (nonatomic) UICollectionView *collectionView;
 @property (nonatomic) CGSize  cellSize; // inner
 @property (nonatomic) NSArray *cluster;
 @end
@@ -37,21 +38,39 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
         _collectionView.delegate = self;
         
         [_collectionView registerClass:[PhotoCollectionCell class] forCellWithReuseIdentifier:[PhotoCollectionCell reuseID]];
+        [_collectionView registerClass:[ClusterCollectionCellHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                   withReuseIdentifier:[ClusterCollectionCellHeaderView reuseID]];
         [self addSubview:_collectionView];
+        
+        _snapshotImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        [self addSubview:_snapshotImageView];
     }
     return self;
+}
+
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    
+    self.snapshotImageView.image = nil;
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     _collectionView.frame = self.bounds;
+    _snapshotImageView.frame = self.bounds;
 }
 
 - (void)buildCellUIWithCluster:(NSArray *)cluster
 {
     _cluster = cluster;
     [_collectionView reloadData];
+}
+
+- (void)updateSnapshotImageView
+{
+    [_collectionView removeFromSuperview];
 }
 
 - (void)setCellSize:(CGSize)cellSize
@@ -81,13 +100,34 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     return cell;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
-referenceSizeForFooterInSection:(NSInteger)section
-{
-    CGRect f = self.bounds;
-    f.size.width = 4 * 320;
-    return f.size;
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout *)collectionViewLayout
+//referenceSizeForFooterInSection:(NSInteger)section
+//{
+//    CGRect f = self.bounds;
+//    f.size.width = 4 * 320;
+//    return f.size;
+//}
+
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+//           viewForSupplementaryElementOfKind:(NSString *)kind
+//                                 atIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionReusableView *reusableview = nil;
+//
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+//        
+//        ClusterCollectionCellHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+//                                                       withReuseIdentifier:[ClusterCollectionCellHeaderView reuseID]
+//                                                       forIndexPath:indexPath];
+//        
+//        NSUInteger rank = [[PhotoFetcher sharedInstance].clusters indexOfObject:self.cluster];
+//        headerView.titleLabel.text = [NSString stringWithFormat:@"      %d", rank];
+//        reusableview = headerView;
+//    }
+//    return reusableview;
+//}
+
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 
@@ -98,6 +138,14 @@ referenceSizeForFooterInSection:(NSInteger)section
     CGFloat size = [PhotoCollectionCell preferredSizeInCluster];
     return CGSizeMake(size, size);
 }
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout *)collectionViewLayout
+//referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//    CGFloat size = [PhotoCollectionCell preferredSizeInCluster];
+//    return CGSizeMake(size, size);
+//}
 
 // for the entire section
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
