@@ -40,6 +40,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     UICollectionViewLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 
     CGRect f = self.view.bounds;
+#ifdef  
     f.size.width = 1 * f.size.width;
     f.size.height = 1 * f.size.height;
     
@@ -106,8 +107,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     
     NSLog(@"cellForItemAtIndexPath %d with tag %d \n", indexPath.row, collectionView.tag);
     
-    // hand off the data to lower level
-    if (collectionView.tag == 99) {
+    if (self.isViewZoomed) {
         UIImage *image = [[PhotoFetcher sharedInstance].clusterSnapshots objectAtIndex:indexPath.item];
         cell.snapshotImageView.image = image;
     } else {
@@ -125,12 +125,6 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
 //    return f.size;
 //}
 
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 
@@ -138,14 +132,14 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height, width;
-    height = [PhotoCollectionCell preferredSizeInCluster];
-    width  = self.collectionView.bounds.size.width;
-    
-    if (self.collectionView.tag == 99) {
+    if (self.isViewZoomed)
+    {
         return CGSizeMake(320, 40);
     }
     
+    CGFloat height, width;
+    height = [PhotoCollectionCell preferredSizeInCluster];
+    width  = self.collectionView.bounds.size.width;
     return CGSizeMake(width, height);
 }
 

@@ -17,6 +17,4 @@
 
 - (void)buildCellUIWithCluster:(NSArray *)cluster;
 
-- (void)updateSnapshotImageView;
-
 @end

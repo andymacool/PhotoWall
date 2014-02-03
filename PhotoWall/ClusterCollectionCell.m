@@ -68,11 +68,6 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     [_collectionView reloadData];
 }
 
-- (void)updateSnapshotImageView
-{
-    [_collectionView removeFromSuperview];
-}
-
 - (void)setCellSize:(CGSize)cellSize
 {
     _cellSize = cellSize;

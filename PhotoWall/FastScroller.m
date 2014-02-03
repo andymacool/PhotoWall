@@ -8,9 +8,7 @@
 
 #import "FastScroller.h"
 #import "FastScrollerThumb.h"
-
-//#define DO_CGTransform
-#define DO_ChangeLayout
+#import "PhotoClustersViewController.h"
 
 @interface FastScroller ()
 @property (nonatomic, assign) CGPoint scrollOffset;
@@ -37,8 +35,10 @@
     if( self.scrollPeer )
     {
         CGFloat denom = self.scrollPeer.transform.d;
-        if( denom == 0 )
+        
+        if( denom == 0 ) {
             denom = 1;
+        }
         
         return floor(self.scrollPeer.frame.size.height / denom); // "d" is sy, or the y-scale transform, in the matrix
     }
@@ -120,9 +120,11 @@
 
     if ([self.scrollPeer isKindOfClass:[UICollectionView class]]) {
         UICollectionView *collectionView = (UICollectionView *)self.scrollPeer;
-        collectionView.tag = 99;
         
-//        [collectionView.collectionViewLayout invalidateLayout];
+        if ([collectionView.delegate isKindOfClass:[PhotoClustersViewController class]]) {
+            PhotoClustersViewController *delegateVC = (PhotoClustersViewController *)collectionView.delegate;
+            delegateVC.isViewZoomed = YES;
+        }
         
         UICollectionViewFlowLayout *newLayout = [[UICollectionViewFlowLayout alloc] init];
         
@@ -161,7 +163,10 @@
     
     if ([self.scrollPeer isKindOfClass:[UICollectionView class]]) {
         UICollectionView *collectionView = (UICollectionView *)self.scrollPeer;
-        collectionView.tag = 0;
+        if ([collectionView.delegate isKindOfClass:[PhotoClustersViewController class]]) {
+            PhotoClustersViewController *delegateVC = (PhotoClustersViewController *)collectionView.delegate;
+            delegateVC.isViewZoomed = NO;
+        }
         UICollectionViewFlowLayout *newLayout = [[UICollectionViewFlowLayout alloc] init];
         
         __weak UICollectionView *weakCollectionView = collectionView;

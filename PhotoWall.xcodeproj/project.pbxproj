@@ -37,6 +37,7 @@
 		B31110041891D67F00045A86 /* ClusterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCell.m; sourceTree = "<group>"; };
 		B31110071891F58B00045A86 /* FastScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScroller.h; sourceTree = "<group>"; };
 		B31110081891F58B00045A86 /* FastScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScroller.m; sourceTree = "<group>"; };
+		B3360549189C709600ADF458 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScrollerThumb.h; sourceTree = "<group>"; };
 		B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScrollerThumb.m; sourceTree = "<group>"; };
 		B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterCollectionCellHeaderView.h; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 		B39507E4178B98FB00C44194 /* PhotoWall */ = {
 			isa = PBXGroup;
 			children = (
+				B3360549189C709600ADF458 /* Config.h */,
 				B39507ED178B98FB00C44194 /* AppDelegate.h */,
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
 				B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */,

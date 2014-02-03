@@ -20,11 +20,7 @@
 #define SHOW_CLUSTERS_ONLY
 #ifdef  SHOW_CLUSTERS_ONLY
     PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];
-    DebugViewController *debugVC = [[DebugViewController alloc] init];
-    
-    UITabBarController *rootTab = [[UITabBarController alloc] init];
-    [rootTab setViewControllers:@[photoClustersVC,debugVC]];
-    self.window.rootViewController = rootTab;
+    self.window.rootViewController = photoClustersVC;
 #else
     PhotoGridViewController     *photoGridVC = [[PhotoGridViewController alloc] init];
     PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];
