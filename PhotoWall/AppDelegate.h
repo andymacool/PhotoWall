@@ -12,6 +12,4 @@
 
 @property (nonatomic) UIWindow *window;
 
-@property (nonatomic) UIViewController *rootVC;
-
 @end

@@ -19,6 +19,8 @@
 		B38DE41118A17B700055F5BA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41018A17B700055F5BA /* SettingsViewController.m */; };
 		B38DE41418A17C8C0055F5BA /* ZoomOutPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41318A17C8C0055F5BA /* ZoomOutPhotoViewController.m */; };
 		B38DE41718A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41618A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m */; };
+		B38DE42018A1BA1D0055F5BA /* AppCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41F18A1BA1D0055F5BA /* AppCore.m */; };
+		B38DE42318A1C9D10055F5BA /* ZoomScrollingInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE42218A1C9D10055F5BA /* ZoomScrollingInteractor.m */; };
 		B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507DE178B98FB00C44194 /* UIKit.framework */; };
 		B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E0178B98FB00C44194 /* Foundation.framework */; };
 		B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E2178B98FB00C44194 /* CoreGraphics.framework */; };
@@ -58,6 +60,10 @@
 		B38DE41318A17C8C0055F5BA /* ZoomOutPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomOutPhotoViewController.m; sourceTree = "<group>"; };
 		B38DE41518A17DE30055F5BA /* ZoomOutPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomOutPhotoTableViewCell.h; sourceTree = "<group>"; };
 		B38DE41618A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomOutPhotoTableViewCell.m; sourceTree = "<group>"; };
+		B38DE41E18A1BA1D0055F5BA /* AppCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCore.h; sourceTree = "<group>"; };
+		B38DE41F18A1BA1D0055F5BA /* AppCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCore.m; sourceTree = "<group>"; };
+		B38DE42118A1C9D10055F5BA /* ZoomScrollingInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomScrollingInteractor.h; sourceTree = "<group>"; };
+		B38DE42218A1C9D10055F5BA /* ZoomScrollingInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomScrollingInteractor.m; sourceTree = "<group>"; };
 		B39507DB178B98FB00C44194 /* PhotoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39507DE178B98FB00C44194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B39507E0178B98FB00C44194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +187,8 @@
 		B38DE41C18A1B9250055F5BA /* Transitioning */ = {
 			isa = PBXGroup;
 			children = (
+				B38DE42118A1C9D10055F5BA /* ZoomScrollingInteractor.h */,
+				B38DE42218A1C9D10055F5BA /* ZoomScrollingInteractor.m */,
 				B33AEDCC18A068BF00178C6F /* ModalTransitionAnimator.h */,
 				B33AEDCD18A068BF00178C6F /* ModalTransitionAnimator.m */,
 			);
@@ -229,6 +237,8 @@
 			children = (
 				B39507ED178B98FB00C44194 /* AppDelegate.h */,
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
+				B38DE41E18A1BA1D0055F5BA /* AppCore.h */,
+				B38DE41F18A1BA1D0055F5BA /* AppCore.m */,
 				B38DE41918A1B56C0055F5BA /* Model */,
 				B38DE41A18A1B7D40055F5BA /* Controllers */,
 				B3110FFB1891AC5200045A86 /* Views and Cells */,
@@ -323,8 +333,10 @@
 				B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */,
 				B39507EB178B98FB00C44194 /* main.m in Sources */,
 				B3697D751896E1DB007B9B87 /* FastScrollerThumb.m in Sources */,
+				B38DE42318A1C9D10055F5BA /* ZoomScrollingInteractor.m in Sources */,
 				B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */,
 				B3697D781896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m in Sources */,
+				B38DE42018A1BA1D0055F5BA /* AppCore.m in Sources */,
 				B33AEDC818A03AFF00178C6F /* SinglePhotoViewController.m in Sources */,
 				B3110FFF1891BE6C00045A86 /* PhotoFetcher.m in Sources */,
 				B33AEDCE18A068BF00178C6F /* ModalTransitionAnimator.m in Sources */,

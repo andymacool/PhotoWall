@@ -26,7 +26,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Clusters" image:nil selectedImage:nil];
+        self.title = @"Clusters";
     }
     return self;
 }
@@ -86,6 +86,12 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     }];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // self.navigationController.navigationBarHidden = YES;
+}
 
 #pragma mark - UICollectionViewDataSource
 

@@ -11,6 +11,7 @@
 #import "ModalTransitionAnimator.h"
 #import "PhotoCollectionCell.h"
 #import "AppDelegate.h"
+#import "AppCore.h"
 
 static const CGFloat kMinInterLineSpacing = 5.0;
 static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
@@ -84,11 +85,10 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UIImage *image = [_cluster objectAtIndex:indexPath.item];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 
     // calcuate the selected cell's from with respect to the view
     PhotoCollectionCell *selectedCell = (PhotoCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    self.selectedCellFrame = [[selectedCell superview] convertRect:selectedCell.frame toView:appDelegate.rootVC.view];
+    self.selectedCellFrame = [[selectedCell superview] convertRect:selectedCell.frame toView:[AppCore sharedInstance].rootVC.view];
     
     SinglePhotoViewController *spvc = [[SinglePhotoViewController alloc] init];
     // spvc.image = image;
@@ -96,7 +96,7 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     spvc.transitioningDelegate = self;
     spvc.modalPresentationStyle = UIModalPresentationCustom;
     
-    [appDelegate.rootVC presentViewController:spvc animated:YES completion:nil];
+    [[AppCore sharedInstance].rootVC presentViewController:spvc animated:YES completion:nil];
 }
 
 

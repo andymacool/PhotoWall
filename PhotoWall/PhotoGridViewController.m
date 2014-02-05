@@ -11,7 +11,7 @@
 #import "PhotoFetcher.h"
 
 static const CGFloat kScaleBoundLower = 0.5;
-static const CGFloat kScaleBoundUpper = 4.0;
+static const CGFloat kScaleBoundUpper = 2.0;
 static const CGFloat kMinInterLineSpacing = 5.0;
 static const CGFloat kMinInterItemSpacing = 5.0;
 
@@ -30,7 +30,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Grid" image:nil selectedImage:nil];
+        self.title = @"Pinch GridView";
     }
     return self;
 }
@@ -48,7 +48,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;
     [self.view addSubview:self.collectionView];
     
     // add the pinch to zoom gesture
-    self.fitCells = NO;
+    self.fitCells = YES;
     self.animatedZooming = YES;
     self.scale = (kScaleBoundUpper + kScaleBoundLower)/2.0;
 

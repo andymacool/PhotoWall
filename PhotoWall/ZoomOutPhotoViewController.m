@@ -13,7 +13,7 @@
 static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCellID";
 
 @interface ZoomOutPhotoViewController ()
-
+@property (nonatomic) UITapGestureRecognizer *singleTapGesture;
 @end
 
 @implementation ZoomOutPhotoViewController
@@ -23,8 +23,7 @@ static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCel
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self)
-    {
+    if (self) {
     
     }
     return self;
@@ -33,10 +32,18 @@ static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCel
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- 
+
+    self.singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss:)];
+    self.singleTapGesture.numberOfTapsRequired = 1;
+    
+    [self.tableView addGestureRecognizer:self.singleTapGesture];
     [self.tableView registerClass:[ZoomOutPhotoTableViewCell class] forCellReuseIdentifier:ZoomOutPhotoTableViewCellID];
 }
 
+- (IBAction)dismiss:(UIGestureRecognizer *)recognizer
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark - Table view data source
 

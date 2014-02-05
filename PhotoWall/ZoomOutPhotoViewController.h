@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-/// This is the view controller to show for Zoom Scrolling
+//  This is the view (controller) to show during zoom scrolling.
+//  it has a table view which displays composed cluster snapshots
 
 @interface ZoomOutPhotoViewController : UITableViewController
 

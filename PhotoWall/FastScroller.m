@@ -6,11 +6,12 @@
 //  Copyright (c) 2014 Andy Wang. All rights reserved.
 //
 
+#import "AppCore.h"
 #import "FastScroller.h"
 #import "FastScrollerThumb.h"
 #import "PhotoClustersViewController.h"
 #import "ZoomOutPhotoViewController.h"
-#import "AppDelegate.h"
+#import "ZoomScrollingInteractor.h"
 
 @interface FastScroller ()
 @property (nonatomic, assign) CGPoint scrollOffset;
@@ -87,8 +88,9 @@
     NSLog(@"Started Tracking ... \n");
     
     ZoomOutPhotoViewController *zoomOutVC = [[ZoomOutPhotoViewController alloc] init];
-    AppDelegate *appDeleage = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDeleage.rootVC presentViewController:zoomOutVC animated:YES completion:nil];
+    zoomOutVC.transitioningDelegate = [[ZoomScrollingInteractor alloc] init];
+    zoomOutVC.modalPresentationStyle = UIModalPresentationCustom;
+    [[AppCore sharedInstance].rootVC presentViewController:zoomOutVC animated:YES completion:nil];
     return YES;
     
 #if 0
@@ -162,8 +164,7 @@
 
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    AppDelegate *appDeleage = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDeleage.rootVC dismissViewControllerAnimated:YES completion:nil];
+    [[AppCore sharedInstance].rootVC dismissViewControllerAnimated:YES completion:nil];
 
     NSLog(@"End Tracking ... \n");
     [super endTrackingWithTouch:touch withEvent:event];
