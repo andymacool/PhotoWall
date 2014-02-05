@@ -17,19 +17,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-#define SHOW_CLUSTERS_ONLY
-#ifdef  SHOW_CLUSTERS_ONLY
-    PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];
-    self.window.rootViewController = photoClustersVC;
-#else
-    PhotoGridViewController     *photoGridVC = [[PhotoGridViewController alloc] init];
-    PhotoClustersViewController *photoClustersVC = [[PhotoClustersViewController alloc] init];
+    PhotoClustersViewController *clusterController = [[PhotoClustersViewController alloc] init];
+    UINavigationController *clusterControllerNav = [[UINavigationController alloc] initWithRootViewController:clusterController];
+
+    PhotoGridViewController *gridController = [[PhotoGridViewController alloc] init];
+    UINavigationController *gridControllerNav = [[UINavigationController alloc] initWithRootViewController:gridController];
     
     UITabBarController *rootTab = [[UITabBarController alloc] init];
-    [rootTab setViewControllers:@[photoGridVC, photoClustersVC]];
+    [rootTab setViewControllers:@[clusterControllerNav, gridControllerNav]];
     self.window.rootViewController = rootTab;
-#endif
-    
+
     [self.window makeKeyAndVisible];
     return YES;
 }

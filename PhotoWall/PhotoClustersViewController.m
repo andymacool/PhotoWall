@@ -40,7 +40,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     UICollectionViewLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 
     CGRect f = self.view.bounds;
-#ifdef  
+
     f.size.width = 1 * f.size.width;
     f.size.height = 1 * f.size.height;
     
@@ -116,6 +116,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     }
     return cell;
 }
+
 
 //- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
 //                                   referenceSizeForFooterInSection:(NSInteger)section

@@ -10,6 +10,6 @@
 
 @interface PhotoClustersViewController : UIViewController
 
-@property (nonatomic) BOOL isViewZoomed;    // the collection view
+@property (nonatomic) BOOL isViewZoomed; // for the collection view
 
 @end

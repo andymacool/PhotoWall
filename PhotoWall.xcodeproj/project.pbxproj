@@ -11,8 +11,14 @@
 		B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110011891D23600045A86 /* PhotoClustersViewController.m */; };
 		B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110041891D67F00045A86 /* ClusterCollectionCell.m */; };
 		B31110091891F58B00045A86 /* FastScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B31110081891F58B00045A86 /* FastScroller.m */; };
+		B33AEDC818A03AFF00178C6F /* SinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33AEDC718A03AFF00178C6F /* SinglePhotoViewController.m */; };
+		B33AEDCB18A03DD400178C6F /* ClusterCollectionCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B33AEDCA18A03DD400178C6F /* ClusterCollectionCellManager.m */; };
+		B33AEDCE18A068BF00178C6F /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B33AEDCD18A068BF00178C6F /* ModalTransitionAnimator.m */; };
 		B3697D751896E1DB007B9B87 /* FastScrollerThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */; };
 		B3697D781896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */; };
+		B38DE41118A17B700055F5BA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41018A17B700055F5BA /* SettingsViewController.m */; };
+		B38DE41418A17C8C0055F5BA /* ZoomOutPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41318A17C8C0055F5BA /* ZoomOutPhotoViewController.m */; };
+		B38DE41718A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B38DE41618A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m */; };
 		B39507DF178B98FB00C44194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507DE178B98FB00C44194 /* UIKit.framework */; };
 		B39507E1178B98FB00C44194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E0178B98FB00C44194 /* Foundation.framework */; };
 		B39507E3178B98FB00C44194 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39507E2178B98FB00C44194 /* CoreGraphics.framework */; };
@@ -25,7 +31,6 @@
 		B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* PhotoGridViewController.m */; };
 		B3950802178B992C00C44194 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3950801178B992C00C44194 /* AssetsLibrary.framework */; };
 		B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */; };
-		B3C4656B189B3784003ED57E /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C4656A189B3784003ED57E /* DebugViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +42,22 @@
 		B31110041891D67F00045A86 /* ClusterCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCell.m; sourceTree = "<group>"; };
 		B31110071891F58B00045A86 /* FastScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScroller.h; sourceTree = "<group>"; };
 		B31110081891F58B00045A86 /* FastScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScroller.m; sourceTree = "<group>"; };
-		B3360549189C709600ADF458 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		B33AEDC618A03AFF00178C6F /* SinglePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePhotoViewController.h; sourceTree = "<group>"; };
+		B33AEDC718A03AFF00178C6F /* SinglePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePhotoViewController.m; sourceTree = "<group>"; };
+		B33AEDC918A03DD400178C6F /* ClusterCollectionCellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterCollectionCellManager.h; sourceTree = "<group>"; };
+		B33AEDCA18A03DD400178C6F /* ClusterCollectionCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCellManager.m; sourceTree = "<group>"; };
+		B33AEDCC18A068BF00178C6F /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
+		B33AEDCD18A068BF00178C6F /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
 		B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScrollerThumb.h; sourceTree = "<group>"; };
 		B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScrollerThumb.m; sourceTree = "<group>"; };
 		B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterCollectionCellHeaderView.h; sourceTree = "<group>"; };
 		B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterCollectionCellHeaderView.m; sourceTree = "<group>"; };
+		B38DE40F18A17B700055F5BA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B38DE41018A17B700055F5BA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B38DE41218A17C8C0055F5BA /* ZoomOutPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomOutPhotoViewController.h; sourceTree = "<group>"; };
+		B38DE41318A17C8C0055F5BA /* ZoomOutPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomOutPhotoViewController.m; sourceTree = "<group>"; };
+		B38DE41518A17DE30055F5BA /* ZoomOutPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomOutPhotoTableViewCell.h; sourceTree = "<group>"; };
+		B38DE41618A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomOutPhotoTableViewCell.m; sourceTree = "<group>"; };
 		B39507DB178B98FB00C44194 /* PhotoWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39507DE178B98FB00C44194 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B39507E0178B98FB00C44194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,8 +76,6 @@
 		B3950801178B992C00C44194 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
 		B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
-		B3C46569189B3784003ED57E /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
-		B3C4656A189B3784003ED57E /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,38 +93,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3110FFA1891AC3F00045A86 /* Grid CollectionView */ = {
+		B3110FFA1891AC3F00045A86 /* Grid CollectionVC */ = {
 			isa = PBXGroup;
 			children = (
 				B39507F6178B98FB00C44194 /* PhotoGridViewController.h */,
 				B39507F7178B98FB00C44194 /* PhotoGridViewController.m */,
 			);
-			name = "Grid CollectionView";
+			name = "Grid CollectionVC";
 			sourceTree = "<group>";
 		};
-		B3110FFB1891AC5200045A86 /* CollectionCell */ = {
+		B3110FFB1891AC5200045A86 /* Views and Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */,
+				B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */,
+				B31110031891D67F00045A86 /* ClusterCollectionCell.h */,
+				B31110041891D67F00045A86 /* ClusterCollectionCell.m */,
 				B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */,
 				B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */,
 			);
-			name = CollectionCell;
+			name = "Views and Cells";
 			sourceTree = "<group>";
 		};
-		B3110FFC1891AC5D00045A86 /* Nested CollectionView */ = {
+		B3110FFC1891AC5D00045A86 /* Nested CollectionVC */ = {
 			isa = PBXGroup;
 			children = (
 				B31110001891D23600045A86 /* PhotoClustersViewController.h */,
 				B31110011891D23600045A86 /* PhotoClustersViewController.m */,
-				B31110031891D67F00045A86 /* ClusterCollectionCell.h */,
-				B31110041891D67F00045A86 /* ClusterCollectionCell.m */,
-				B3697D761896E5EF007B9B87 /* ClusterCollectionCellHeaderView.h */,
-				B3697D771896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m */,
+				B33AEDC918A03DD400178C6F /* ClusterCollectionCellManager.h */,
+				B33AEDCA18A03DD400178C6F /* ClusterCollectionCellManager.m */,
 			);
-			name = "Nested CollectionView";
+			name = "Nested CollectionVC";
 			sourceTree = "<group>";
 		};
-		B31110061891F3F800045A86 /* Scroller */ = {
+		B31110061891F3F800045A86 /* Fast Scroller */ = {
 			isa = PBXGroup;
 			children = (
 				B31110071891F58B00045A86 /* FastScroller.h */,
@@ -118,7 +134,66 @@
 				B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */,
 				B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */,
 			);
-			name = Scroller;
+			name = "Fast Scroller";
+			sourceTree = "<group>";
+		};
+		B38DE41818A1B5570055F5BA /* ZoomedOut VC */ = {
+			isa = PBXGroup;
+			children = (
+				B38DE41218A17C8C0055F5BA /* ZoomOutPhotoViewController.h */,
+				B38DE41318A17C8C0055F5BA /* ZoomOutPhotoViewController.m */,
+				B38DE41518A17DE30055F5BA /* ZoomOutPhotoTableViewCell.h */,
+				B38DE41618A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m */,
+			);
+			name = "ZoomedOut VC";
+			sourceTree = "<group>";
+		};
+		B38DE41918A1B56C0055F5BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */,
+				B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B38DE41A18A1B7D40055F5BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B38DE41D18A1B95D0055F5BA /* SinglePhoto VC */,
+				B38DE41818A1B5570055F5BA /* ZoomedOut VC */,
+				B3110FFA1891AC3F00045A86 /* Grid CollectionVC */,
+				B3110FFC1891AC5D00045A86 /* Nested CollectionVC */,
+				B38DE41B18A1B8090055F5BA /* Settings VC */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B38DE41B18A1B8090055F5BA /* Settings VC */ = {
+			isa = PBXGroup;
+			children = (
+				B38DE40F18A17B700055F5BA /* SettingsViewController.h */,
+				B38DE41018A17B700055F5BA /* SettingsViewController.m */,
+			);
+			name = "Settings VC";
+			sourceTree = "<group>";
+		};
+		B38DE41C18A1B9250055F5BA /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				B33AEDCC18A068BF00178C6F /* ModalTransitionAnimator.h */,
+				B33AEDCD18A068BF00178C6F /* ModalTransitionAnimator.m */,
+			);
+			name = Transitioning;
+			sourceTree = "<group>";
+		};
+		B38DE41D18A1B95D0055F5BA /* SinglePhoto VC */ = {
+			isa = PBXGroup;
+			children = (
+				B33AEDC618A03AFF00178C6F /* SinglePhotoViewController.h */,
+				B33AEDC718A03AFF00178C6F /* SinglePhotoViewController.m */,
+			);
+			name = "SinglePhoto VC";
 			sourceTree = "<group>";
 		};
 		B39507D2178B98FB00C44194 = {
@@ -152,17 +227,13 @@
 		B39507E4178B98FB00C44194 /* PhotoWall */ = {
 			isa = PBXGroup;
 			children = (
-				B3360549189C709600ADF458 /* Config.h */,
 				B39507ED178B98FB00C44194 /* AppDelegate.h */,
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
-				B3110FFD1891BE6C00045A86 /* PhotoFetcher.h */,
-				B3110FFE1891BE6C00045A86 /* PhotoFetcher.m */,
-				B3C46569189B3784003ED57E /* DebugViewController.h */,
-				B3C4656A189B3784003ED57E /* DebugViewController.m */,
-				B3110FFA1891AC3F00045A86 /* Grid CollectionView */,
-				B3110FFC1891AC5D00045A86 /* Nested CollectionView */,
-				B3110FFB1891AC5200045A86 /* CollectionCell */,
-				B31110061891F3F800045A86 /* Scroller */,
+				B38DE41918A1B56C0055F5BA /* Model */,
+				B38DE41A18A1B7D40055F5BA /* Controllers */,
+				B3110FFB1891AC5200045A86 /* Views and Cells */,
+				B38DE41C18A1B9250055F5BA /* Transitioning */,
+				B31110061891F3F800045A86 /* Fast Scroller */,
 				B39507E5178B98FB00C44194 /* Supporting Files */,
 			);
 			path = PhotoWall;
@@ -247,15 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33AEDCB18A03DD400178C6F /* ClusterCollectionCellManager.m in Sources */,
+				B38DE41718A17DE30055F5BA /* ZoomOutPhotoTableViewCell.m in Sources */,
 				B31110051891D67F00045A86 /* ClusterCollectionCell.m in Sources */,
 				B39507EB178B98FB00C44194 /* main.m in Sources */,
 				B3697D751896E1DB007B9B87 /* FastScrollerThumb.m in Sources */,
 				B39507EF178B98FB00C44194 /* AppDelegate.m in Sources */,
 				B3697D781896E5EF007B9B87 /* ClusterCollectionCellHeaderView.m in Sources */,
+				B33AEDC818A03AFF00178C6F /* SinglePhotoViewController.m in Sources */,
 				B3110FFF1891BE6C00045A86 /* PhotoFetcher.m in Sources */,
-				B3C4656B189B3784003ED57E /* DebugViewController.m in Sources */,
+				B33AEDCE18A068BF00178C6F /* ModalTransitionAnimator.m in Sources */,
 				B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */,
 				B31110091891F58B00045A86 /* FastScroller.m in Sources */,
+				B38DE41118A17B700055F5BA /* SettingsViewController.m in Sources */,
+				B38DE41418A17C8C0055F5BA /* ZoomOutPhotoViewController.m in Sources */,
 				B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */,
 				B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */,
 			);

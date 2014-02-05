@@ -30,6 +30,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _imageView.contentMode = UIViewContentModeScaleToFill;
         [self addSubview:_imageView];
     }
     return self;
