@@ -10,6 +10,9 @@
 
 @interface SinglePhotoViewController : UIViewController
 
-@property (nonatomic) UIImage *image;
+@property (nonatomic) UIImageView *imageView;
+
+- (void)showHeaderAndFooterAnimated:(BOOL)animated;
+- (void)hideHeaderAndFooterAnimated:(BOOL)animated;
 
 @end

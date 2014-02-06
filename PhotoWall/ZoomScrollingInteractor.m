@@ -45,10 +45,10 @@
     if (self.isPresenting) {
         fromViewController.view.userInteractionEnabled = NO;
         
-        [transitionContext.containerView addSubview:fromViewController.view];
         [transitionContext.containerView addSubview:toViewController.view];
+        [transitionContext.containerView addSubview:fromViewController.view];
         
-        toViewController.view.transform = CGAffineTransformMakeScale(2.0, 2.0);
+        toViewController.view.transform = CGAffineTransformMakeScale(1.0, 1.0);
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             

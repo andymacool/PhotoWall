@@ -92,11 +92,16 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     
     SinglePhotoViewController *spvc = [[SinglePhotoViewController alloc] init];
     // spvc.image = image;
-    spvc.image = image;
+    spvc.imageView.image = image;
     spvc.transitioningDelegate = self;
     spvc.modalPresentationStyle = UIModalPresentationCustom;
     
-    [[AppCore sharedInstance].rootVC presentViewController:spvc animated:YES completion:nil];
+    [[AppCore sharedInstance].rootVC presentViewController:spvc animated:YES completion:^{
+        NSLog(@"Done with Presenting!\n");
+        
+        //TODO: show header and footer of single photo view
+        [spvc showHeaderAndFooterAnimated:YES];
+    }];
 }
 
 
@@ -154,6 +159,8 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
     ModalTransitionAnimator *animator = [[ModalTransitionAnimator alloc] init];
+    animator.isPresenting = NO;
+    animator.startFrame = self.selectedCellFrame;
     return animator;
 }
 

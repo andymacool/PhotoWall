@@ -7,6 +7,7 @@
 //
 
 #import "ModalTransitionAnimator.h"
+#import "SinglePhotoViewController.h"
 
 @implementation ModalTransitionAnimator
 
@@ -32,14 +33,23 @@
         CGRect startFrame = self.startFrame;
         
         toViewController.view.frame = startFrame;
-        toViewController.view.autoresizingMask = UIViewAutoresizingNone;
+
+        if ([toViewController isKindOfClass:[SinglePhotoViewController class]]) {
+            SinglePhotoViewController *toVC = (SinglePhotoViewController *)toViewController;
+            toVC.imageView.frame = toVC.view.bounds;
+        }
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             
             fromViewController.view.alpha = 0;
-            fromViewController.view.transform = CGAffineTransformMakeScale(0.9, 0.9);
             
+            toViewController.view.bounds = endFrame;
             toViewController.view.frame = endFrame;
+            
+            if ([toViewController isKindOfClass:[SinglePhotoViewController class]]) {
+                SinglePhotoViewController *toVC = (SinglePhotoViewController *)toViewController;
+                toVC.imageView.frame = toVC.view.bounds;
+            }
             
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
@@ -51,12 +61,17 @@
         [transitionContext.containerView addSubview:toViewController.view];
         [transitionContext.containerView addSubview:fromViewController.view];
         
-        endFrame.origin.x += 320;
+        endFrame = self.startFrame;
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-            toViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
             fromViewController.view.frame = endFrame;
             toViewController.view.alpha = 1;
+            
+            if ([fromViewController isKindOfClass:[SinglePhotoViewController class]]) {
+                SinglePhotoViewController *fromVC = (SinglePhotoViewController *)fromViewController;
+                fromVC.imageView.frame = fromVC.view.bounds;
+            }
+            
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
         }];
