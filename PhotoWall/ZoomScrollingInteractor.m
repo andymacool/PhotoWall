@@ -10,6 +10,25 @@
 
 @implementation ZoomScrollingInteractor
 
+#pragma mark - UINavigationControllerDelegate
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController *)fromVC
+                                                 toViewController:(UIViewController *)toVC
+{
+    if (operation == UINavigationControllerOperationPush) {
+        self.isPushing = YES;
+        return self;
+    }
+    if (operation == UINavigationControllerOperationPop) {
+        self.isPushing = NO;
+        return self;
+    }
+    
+    return nil;
+}
+
+
 #pragma mark - UIViewControllerTransitioningDelegate
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
@@ -39,45 +58,40 @@
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    // Set our ending frame. We'll modify this later if we have to
-    CGRect endFrame = fromViewController.view.bounds;
-    
-    if (self.isPresenting) {
+    if (self.isPresenting || self.isPushing) {
         fromViewController.view.userInteractionEnabled = NO;
         
         [transitionContext.containerView addSubview:toViewController.view];
         [transitionContext.containerView addSubview:fromViewController.view];
-        
-        toViewController.view.transform = CGAffineTransformMakeScale(1.0, 1.0);
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             
             fromViewController.view.alpha = 0;
             fromViewController.view.transform = CGAffineTransformMakeScale(0.7, 0.7);
             
-            toViewController.view.transform = CGAffineTransformIdentity;
-
         } completion:^(BOOL finished) {
+            fromViewController.view.transform = CGAffineTransformIdentity;
             [transitionContext completeTransition:YES];
         }];
     }
     else {
         toViewController.view.userInteractionEnabled = YES;
-        
+
         [transitionContext.containerView addSubview:toViewController.view];
         [transitionContext.containerView addSubview:fromViewController.view];
-        
-        endFrame.origin.x += 320;
-        
+
+        toViewController.view.alpha = 1;
+
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-            toViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
-            fromViewController.view.frame = endFrame;
-            toViewController.view.alpha = 1;
+
+            fromViewController.view.transform = CGAffineTransformMakeScale(3.0, 3.0);
+            fromViewController.view.alpha = 0;
+            
         } completion:^(BOOL finished) {
+            fromViewController.view.transform = CGAffineTransformIdentity;
             [transitionContext completeTransition:YES];
         }];
     }
-    
 }
 
 

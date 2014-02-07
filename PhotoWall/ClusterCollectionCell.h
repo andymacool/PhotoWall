@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClusterCollectionCellHeaderView.h"
 
 @interface ClusterCollectionCell : UICollectionViewCell
 
 @property (nonatomic) UIImageView   *snapshotImageView;
 @property (nonatomic) UICollectionView *collectionView;
+@property (nonatomic) ClusterCollectionCellHeaderView *headerView;
 
 + (NSString *)reuseID;
 

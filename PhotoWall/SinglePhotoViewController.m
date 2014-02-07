@@ -23,8 +23,7 @@
     if (self) {
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        self.view.clipsToBounds = YES;
-        [self.view addSubview:_imageView];
+        self.imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         
 #if 0
         self.view.layer.borderColor = [UIColor greenColor].CGColor;
@@ -38,6 +37,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.clipsToBounds = YES;
+
+    self.imageView.frame = self.view.bounds;
+
+    [self.view addSubview:self.imageView];
     
     _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissViewController)];
     _tapGesture.numberOfTapsRequired = 1;
@@ -60,11 +65,6 @@
     self.footer.backgroundColor = [UIColor greenColor];
     self.footer.alpha = 0.0;
     [self.view addSubview:self.footer];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
 }
 
 - (void)showHeaderAndFooterAnimated:(BOOL)animated

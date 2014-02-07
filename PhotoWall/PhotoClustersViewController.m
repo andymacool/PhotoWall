@@ -11,6 +11,7 @@
 #import "PhotoCollectionCell.h"
 #import "PhotoFetcher.h"
 #import "FastScroller.h"
+#import "FakeScroller.h"
 
 static const CGFloat kMinInterLineSpacing = 5.0;
 static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
@@ -27,6 +28,9 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Clusters";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title
+                                                        image:[UIImage imageNamed:@"photos"]
+                                                selectedImage:[UIImage imageNamed:@"photosSelected"]];
     }
     return self;
 }
@@ -47,7 +51,8 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     self.collectionView = [[UICollectionView alloc] initWithFrame:f collectionViewLayout:flowLayout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
     [self.collectionView registerClass:[ClusterCollectionCell class] forCellWithReuseIdentifier:[ClusterCollectionCell reuseID]];
     [self.view addSubview:self.collectionView];
     
@@ -56,14 +61,17 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     
     CGFloat x, y, w, h;
     w = 20.0;
-    h = self.view.bounds.size.height;
+    h = self.view.bounds.size.height - 40;
     x = self.view.bounds.size.width - w;
-    y = 0;
+    y = 64;
     
-    FastScroller *scroller = [[FastScroller alloc] initWithFrame:CGRectMake(x, y, w, h)];
-    scroller.scrollPeer = self.collectionView;
-    [self.view addSubview:scroller];
-    
+    self.scroller = [[FastScroller alloc] initWithFrame:CGRectMake(x, y, w, h)];
+    self.scroller.scrollPeer = self.collectionView;
+    [self.navigationController.view addSubview:self.scroller];
+
+//    FakeScroller *scroller = [[FakeScroller alloc] initWithFrame:CGRectMake(x, y, w, h)];
+//    [self.view addSubview:scroller];
+
     // install the progress view
     /*
     x = 20;
@@ -145,7 +153,7 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     }
     
     CGFloat height, width;
-    height = [PhotoCollectionCell preferredSizeInCluster];
+    height = [PhotoCollectionCell preferredSizeInCluster] + [ClusterCollectionCellHeaderView preferredHeight];
     width  = self.collectionView.bounds.size.width;
     return CGSizeMake(width, height);
 }

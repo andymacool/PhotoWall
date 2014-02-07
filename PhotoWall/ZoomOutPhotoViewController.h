@@ -11,6 +11,10 @@
 //  This is the view (controller) to show during zoom scrolling.
 //  it has a table view which displays composed cluster snapshots
 
-@interface ZoomOutPhotoViewController : UITableViewController
+@class FastScroller;
+
+@interface ZoomOutPhotoViewController : UIViewController
+
+@property (nonatomic) FastScroller *scroller;
 
 @end

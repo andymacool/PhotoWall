@@ -33,6 +33,11 @@
 		B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39507F7178B98FB00C44194 /* PhotoGridViewController.m */; };
 		B3950802178B992C00C44194 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3950801178B992C00C44194 /* AssetsLibrary.framework */; };
 		B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */; };
+		B3E23EAA18A440ED0098F468 /* photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E23EA918A440ED0098F468 /* photos@2x.png */; };
+		B3E23EAC18A440F40098F468 /* photosSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E23EAB18A440F40098F468 /* photosSelected@2x.png */; };
+		B3E23EAE18A440F80098F468 /* collections@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E23EAD18A440F80098F468 /* collections@2x.png */; };
+		B3E23EB018A440FC0098F468 /* collectionsSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E23EAF18A440FC0098F468 /* collectionsSelected@2x.png */; };
+		B3E23EB418A447510098F468 /* FakeScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E23EB318A447510098F468 /* FakeScroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,12 @@
 		B3950801178B992C00C44194 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B3A9797A178CD6EC00775714 /* PhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
 		B3A9797B178CD6EC00775714 /* PhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
+		B3E23EA918A440ED0098F468 /* photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos@2x.png"; sourceTree = "<group>"; };
+		B3E23EAB18A440F40098F468 /* photosSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photosSelected@2x.png"; sourceTree = "<group>"; };
+		B3E23EAD18A440F80098F468 /* collections@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collections@2x.png"; sourceTree = "<group>"; };
+		B3E23EAF18A440FC0098F468 /* collectionsSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collectionsSelected@2x.png"; sourceTree = "<group>"; };
+		B3E23EB218A447510098F468 /* FakeScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeScroller.h; sourceTree = "<group>"; };
+		B3E23EB318A447510098F468 /* FakeScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeScroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +148,8 @@
 			children = (
 				B31110071891F58B00045A86 /* FastScroller.h */,
 				B31110081891F58B00045A86 /* FastScroller.m */,
+				B3E23EB218A447510098F468 /* FakeScroller.h */,
+				B3E23EB318A447510098F468 /* FakeScroller.m */,
 				B3697D731896E1DB007B9B87 /* FastScrollerThumb.h */,
 				B3697D741896E1DB007B9B87 /* FastScrollerThumb.m */,
 			);
@@ -239,6 +252,7 @@
 				B39507EE178B98FB00C44194 /* AppDelegate.m */,
 				B38DE41E18A1BA1D0055F5BA /* AppCore.h */,
 				B38DE41F18A1BA1D0055F5BA /* AppCore.m */,
+				B3E23EB118A441050098F468 /* Assets */,
 				B38DE41918A1B56C0055F5BA /* Model */,
 				B38DE41A18A1B7D40055F5BA /* Controllers */,
 				B3110FFB1891AC5200045A86 /* Views and Cells */,
@@ -261,6 +275,17 @@
 				B39507F4178B98FB00C44194 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3E23EB118A441050098F468 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3E23EA918A440ED0098F468 /* photos@2x.png */,
+				B3E23EAB18A440F40098F468 /* photosSelected@2x.png */,
+				B3E23EAD18A440F80098F468 /* collections@2x.png */,
+				B3E23EAF18A440FC0098F468 /* collectionsSelected@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,10 +339,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E23EAC18A440F40098F468 /* photosSelected@2x.png in Resources */,
 				B39507E9178B98FB00C44194 /* InfoPlist.strings in Resources */,
+				B3E23EAE18A440F80098F468 /* collections@2x.png in Resources */,
+				B3E23EAA18A440ED0098F468 /* photos@2x.png in Resources */,
 				B39507F1178B98FB00C44194 /* Default.png in Resources */,
 				B39507F3178B98FB00C44194 /* Default@2x.png in Resources */,
 				B39507F5178B98FB00C44194 /* Default-568h@2x.png in Resources */,
+				B3E23EB018A440FC0098F468 /* collectionsSelected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +372,7 @@
 				B39507F8178B98FB00C44194 /* PhotoGridViewController.m in Sources */,
 				B31110091891F58B00045A86 /* FastScroller.m in Sources */,
 				B38DE41118A17B700055F5BA /* SettingsViewController.m in Sources */,
+				B3E23EB418A447510098F468 /* FakeScroller.m in Sources */,
 				B38DE41418A17C8C0055F5BA /* ZoomOutPhotoViewController.m in Sources */,
 				B3A9797C178CD6EC00775714 /* PhotoCollectionCell.m in Sources */,
 				B31110021891D23600045A86 /* PhotoClustersViewController.m in Sources */,
@@ -422,12 +452,15 @@
 		B39507FF178B98FB00C44194 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongyu Wang (58K3J55CN6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hongyu Wang (58K3J55CN6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
 				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "7139E648-73B2-4EA6-BF77-7B7A979540C9";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,12 +468,15 @@
 		B3950800178B98FB00C44194 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hongyu Wang (58K3J55CN6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hongyu Wang (58K3J55CN6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoWall/PhotoWall-Prefix.pch";
 				INFOPLIST_FILE = "PhotoWall/PhotoWall-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "7139E648-73B2-4EA6-BF77-7B7A979540C9";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

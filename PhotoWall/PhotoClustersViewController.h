@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class FastScroller;
+
 @interface PhotoClustersViewController : UIViewController
 
 @property (nonatomic) BOOL isViewZoomed; // for the collection view
+
+@property (nonatomic) FastScroller *scroller;
 
 @end

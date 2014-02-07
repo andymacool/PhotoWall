@@ -9,23 +9,28 @@
 #import "ZoomOutPhotoViewController.h"
 #import "ZoomOutPhotoTableViewCell.h"
 #import "PhotoFetcher.h"
+#import "FastScroller.h"
 
 static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCellID";
 
-@interface ZoomOutPhotoViewController ()
+@interface ZoomOutPhotoViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic) UITapGestureRecognizer *singleTapGesture;
+@property (nonatomic) UITableView *tableView;
 @end
 
 @implementation ZoomOutPhotoViewController
 
 #pragma mark - Init
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
-    if (self) {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
+    if (self) {
+        self.navigationItem.hidesBackButton = YES;
+        self.title = @"Clusters";
     }
+    
     return self;
 }
 
@@ -33,16 +38,37 @@ static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCel
 {
     [super viewDidLoad];
 
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
     self.singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss:)];
     self.singleTapGesture.numberOfTapsRequired = 1;
     
     [self.tableView addGestureRecognizer:self.singleTapGesture];
     [self.tableView registerClass:[ZoomOutPhotoTableViewCell class] forCellReuseIdentifier:ZoomOutPhotoTableViewCellID];
+
+    // install the scroller
+    
+//    CGFloat x, y, w, h;
+//    w = 20.0;
+//    h = self.view.bounds.size.height - 40;
+//    x = self.view.bounds.size.width - w;
+//    y = 64;
+//
+//    FastScroller *scroller = [[FastScroller alloc] initWithFrame:CGRectMake(x, y, w, h)];
+//    scroller.scrollPeer = self.tableView;
+//    [self.view addSubview:scroller];
+    
+    self.scroller.scrollPeer = self.tableView;
 }
 
 - (IBAction)dismiss:(UIGestureRecognizer *)recognizer
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Table view data source

@@ -10,8 +10,8 @@
 #import "FastScroller.h"
 #import "FastScrollerThumb.h"
 #import "PhotoClustersViewController.h"
-#import "ZoomOutPhotoViewController.h"
 #import "ZoomScrollingInteractor.h"
+#import "ZoomOutPhotoViewController.h"
 
 @interface FastScroller ()
 @property (nonatomic, assign) CGPoint scrollOffset;
@@ -27,7 +27,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // initialization code
-        self.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.8];
+        self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         self.contentBounds = self.bounds;
     }
     return self;
@@ -63,13 +63,21 @@
 #ifdef  DO_ChangeLayout
     return self.scrollPeer.contentSize.height - [self transformedHeightForScrollView:scrollView];
 #endif
+#ifdef  DO_CGTransform
     return self.scrollPeer.contentSize.height - 568 * 4 - [self transformedHeightForScrollView:scrollView];
+#endif
+
+    return self.scrollPeer.contentSize.height - [self transformedHeightForScrollView:scrollView];
 }
 
 
 - (void)adjustScrollView {
     CGFloat scrollableY = [self scrollableHeightForScrollView:self.scrollPeer];
     CGFloat offsetY = (scrollableY * self.scrollOffsetRatio);
+    
+
+    NSLog(@"real offset is %f and ratio is %f \n", offsetY, self.scrollOffsetRatio);
+    
     CGFloat maxOffsetY = MAX(offsetY, 0);
     offsetY = MIN(offsetY, maxOffsetY);
     [self.scrollPeer setContentOffset:CGPointMake(0, offsetY) animated:NO];
@@ -77,6 +85,9 @@
 
 - (void)trackTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     self.scrollOffset = [touch locationInView:self];
+    
+    NSLog(@"offset is %f and self.view is %@\n", self.scrollOffset.y, self);
+
     [self adjustScrollView];
     [self adjustScrollThumb];
 }
@@ -88,9 +99,24 @@
     NSLog(@"Started Tracking ... \n");
     
     ZoomOutPhotoViewController *zoomOutVC = [[ZoomOutPhotoViewController alloc] init];
-    zoomOutVC.transitioningDelegate = [[ZoomScrollingInteractor alloc] init];
+    PhotoClustersViewController *pcvc = (PhotoClustersViewController *)[AppCore sharedInstance].clusterNav.topViewController;
+    zoomOutVC.scroller = pcvc.scroller;
+    
+    ZoomScrollingInteractor *interactor = [[ZoomScrollingInteractor alloc] init];
+    zoomOutVC.transitioningDelegate = interactor;
+    [AppCore sharedInstance].clusterNav.delegate = interactor;
+#if 0
+    // present modally
     zoomOutVC.modalPresentationStyle = UIModalPresentationCustom;
     [[AppCore sharedInstance].rootVC presentViewController:zoomOutVC animated:YES completion:nil];
+#else
+    // present as-if a push
+    [[AppCore sharedInstance].clusterNav pushViewController:zoomOutVC animated:YES];
+#endif
+    
+    [self installScrollThumb];
+    [self trackTouch:touch withEvent:event];
+
     return YES;
     
 #if 0
@@ -105,6 +131,9 @@
     NSLog(@"%@ \n %f, %f\n", self.scrollPeer, self.scrollPeer.layer.position.x, self.scrollPeer.layer.position.y);
 #endif
     
+    [self installScrollThumb];
+    [self trackTouch:touch withEvent:event];
+
 #ifdef  DO_CGTransform
     // NOTE: the order is very important
     // change the anchor point will change the frame as well
@@ -154,12 +183,12 @@
 
 - (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    //NSLog(@"Continue Tracking ... \n");
+    NSLog(@"Continue Tracking ... \n");
 
     [super continueTrackingWithTouch:touch withEvent:event];
     [self trackTouch:touch withEvent:event];
     
-    return [super continueTrackingWithTouch:touch withEvent:event];
+    return YES;
 }
 
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
@@ -170,6 +199,8 @@
     [super endTrackingWithTouch:touch withEvent:event];
     [self stopTracking];
     
+    [[AppCore sharedInstance].clusterNav popViewControllerAnimated:YES];
+
 #ifdef  DO_ChangeLayout
     
     if ([self.scrollPeer isKindOfClass:[UICollectionView class]]) {

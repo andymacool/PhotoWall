@@ -9,14 +9,14 @@
 #import "ClusterCollectionCellHeaderView.h"
 
 @interface ClusterCollectionCellHeaderView ()
-@property (nonatomic, readwrite) UILabel *titleLabel;
+
 @end
 
 @implementation ClusterCollectionCellHeaderView
 
-+ (NSString *)reuseID
++ (CGFloat)preferredHeight
 {
-    return @"ClusterCollectionCellHeaderView";
+    return 30.0;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -27,9 +27,14 @@
         self.backgroundColor = [UIColor whiteColor];
 
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:50];
+        self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
+
+        self.countLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        self.countLabel.font = [UIFont fontWithName:@"Helvetica" size:12];
+        self.countLabel.textAlignment = NSTextAlignmentRight;
         
         [self addSubview:self.titleLabel];
+        [self addSubview:self.countLabel];
     }
     return self;
 }
@@ -38,19 +43,20 @@
 {
     [super layoutSubviews];
     
-//    CGFloat x, y, w, h;
-//    CGFloat padding;
+    CGFloat x, y, w, h;
     
-    self.titleLabel.frame = self.bounds;
+    // bounds is about 320 x 30
+    x = 10;
+    y = 0;
+    w = 190;
+    h = [ClusterCollectionCellHeaderView preferredHeight];
+    
+    self.titleLabel.frame = CGRectMake(x, y, w, h);
+    
+    w = 100;
+    x = 320 - 100 - 25;
+    
+    self.countLabel.frame = CGRectMake(x, y, w, h);
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

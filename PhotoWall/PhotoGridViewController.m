@@ -31,6 +31,9 @@ static const CGFloat kMinInterItemSpacing = 5.0;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Pinch GridView";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title
+                                                        image:[UIImage imageNamed:@"collections"]
+                                                selectedImage:[UIImage imageNamed:@"collectionsSelected"]];
     }
     return self;
 }

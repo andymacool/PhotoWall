@@ -30,4 +30,18 @@
     return _rootVC;
 }
 
+- (UINavigationController *)clusterNav
+{
+    NSAssert(_rootVC, @"You must set the rootVC for AppCore !");
+    UIViewController *vc = [_rootVC.viewControllers objectAtIndex:0];
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return (UINavigationController *)vc;
+    } else {
+        [[NSException exceptionWithName:@"No Navigation Controller Found !"
+                                reason:@"No Navigation Controller Found !"
+                              userInfo:nil] raise];
+        return nil;
+    }
+}
+
 @end

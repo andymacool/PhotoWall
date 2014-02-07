@@ -62,25 +62,6 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
 //    return f.size;
 //}
 
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
-//           viewForSupplementaryElementOfKind:(NSString *)kind
-//                                 atIndexPath:(NSIndexPath *)indexPath
-//{
-//    UICollectionReusableView *reusableview = nil;
-//
-//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-//
-//        ClusterCollectionCellHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-//                                                       withReuseIdentifier:[ClusterCollectionCellHeaderView reuseID]
-//                                                       forIndexPath:indexPath];
-//
-//        NSUInteger rank = [[PhotoFetcher sharedInstance].clusters indexOfObject:self.cluster];
-//        headerView.titleLabel.text = [NSString stringWithFormat:@"      %d", rank];
-//        reusableview = headerView;
-//    }
-//    return reusableview;
-//}
-
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -100,7 +81,7 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
         NSLog(@"Done with Presenting!\n");
         
         //TODO: show header and footer of single photo view
-        [spvc showHeaderAndFooterAnimated:YES];
+        //[spvc showHeaderAndFooterAnimated:YES];
     }];
 }
 

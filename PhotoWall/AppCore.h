@@ -14,7 +14,8 @@
 
 @interface AppCore : NSObject
 
-@property (nonatomic) UIViewController *rootVC;
+@property (nonatomic) UITabBarController *rootVC;           // app's main tabbar controller
+@property (nonatomic) UINavigationController *clusterNav;   // a child of tabbar controller
 
 + (instancetype)sharedInstance;
 

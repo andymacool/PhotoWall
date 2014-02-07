@@ -10,8 +10,11 @@
 
 /// Serve as both Transitioning Delegate and Animator
 
-@interface ZoomScrollingInteractor : NSObject <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+@interface ZoomScrollingInteractor : NSObject <UIViewControllerTransitioningDelegate,
+                                               UIViewControllerAnimatedTransitioning,
+                                               UINavigationControllerDelegate>
 
 @property (nonatomic) BOOL isPresenting; // YES if presenting view controller, NO if dismissing view controller
 
+@property (nonatomic) BOOL isPushing;    // YES if push from a nav controller, NO if pop from a nav controller
 @end

@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClusterCollectionCellHeaderView : UICollectionReusableView
+@interface ClusterCollectionCellHeaderView : UIView
 
-+ (NSString *)reuseID;
+@property (nonatomic) UILabel *titleLabel;
+@property (nonatomic) UILabel *countLabel;
 
-@property (nonatomic, readonly) UILabel *titleLabel;
++ (CGFloat)preferredHeight;
 
 @end
