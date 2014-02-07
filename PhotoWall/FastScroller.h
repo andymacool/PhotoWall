@@ -10,4 +10,8 @@
 
 @interface FastScroller : UIControl
 @property (nonatomic) UIScrollView *scrollPeer;
+@property (nonatomic, assign) CGFloat scrollOffsetRatio;
+
+- (void)adjustScrollView;
+
 @end

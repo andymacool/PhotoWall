@@ -84,21 +84,23 @@ static const CGFloat kMinInterItemSpacing = 5.0;    // ignore
     
     // start fetching
 
-    [[PhotoFetcher sharedInstance] fetchLibraryPhotosWithProgress:^(double progress) {
-        
-    } andCompletion:^{
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView reloadData];
-        });
-    }];
+    [[PhotoFetcher sharedInstance] fetchLibraryPhotosWithProgress: nil
+                                                    andCompletion:^{
+                                                        dispatch_async(dispatch_get_main_queue(), ^{
+                                                            [self.collectionView reloadData];
+                                                        });
+                                                    }];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    [super viewWillAppear:animated];
     
-    // self.navigationController.navigationBarHidden = YES;
+    self.scroller.scrollPeer = self.collectionView;
+
+    CGFloat offsetY = (self.collectionView.contentSize.height * self.scroller.scrollOffsetRatio);
+    
+    [self.scroller.scrollPeer setContentOffset:CGPointMake(0, offsetY) animated:NO];
 }
 
 #pragma mark - UICollectionViewDataSource

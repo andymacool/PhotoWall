@@ -55,7 +55,8 @@
 {
     // contentBounds = scroller height = full screen height
     
-    return self.scrollOffset.y / self.contentBounds.size.height;
+    _scrollOffsetRatio = self.scrollOffset.y / self.contentBounds.size.height;
+    return _scrollOffsetRatio;
 }
 
 
@@ -75,8 +76,7 @@
     CGFloat scrollableY = [self scrollableHeightForScrollView:self.scrollPeer];
     CGFloat offsetY = (scrollableY * self.scrollOffsetRatio);
     
-
-    NSLog(@"real offset is %f and ratio is %f \n", offsetY, self.scrollOffsetRatio);
+    NSLog(@"Adjusting Scroller Peer with offset %f \n", offsetY);
     
     CGFloat maxOffsetY = MAX(offsetY, 0);
     offsetY = MIN(offsetY, maxOffsetY);
@@ -86,7 +86,7 @@
 - (void)trackTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     self.scrollOffset = [touch locationInView:self];
     
-    NSLog(@"offset is %f and self.view is %@\n", self.scrollOffset.y, self);
+    NSLog(@"touch offset is %f \n", self.scrollOffset.y);
 
     [self adjustScrollView];
     [self adjustScrollThumb];

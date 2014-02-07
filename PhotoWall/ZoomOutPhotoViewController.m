@@ -49,6 +49,8 @@ static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCel
     [self.tableView addGestureRecognizer:self.singleTapGesture];
     [self.tableView registerClass:[ZoomOutPhotoTableViewCell class] forCellReuseIdentifier:ZoomOutPhotoTableViewCellID];
 
+    [self.tableView reloadData];
+    
     // install the scroller
     
 //    CGFloat x, y, w, h;
@@ -63,6 +65,22 @@ static NSString * const ZoomOutPhotoTableViewCellID = @"ZoomOutPhotoTableViewCel
     
     self.scroller.scrollPeer = self.tableView;
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // adjust the table view's scroll offset
+    [self.scroller adjustScrollView];
+}
+
+//- (void)viewDidAppear:(BOOL)animated
+//{
+//    [super viewDidAppear:animated];
+//    
+//    // adjust the table view's scroll offset
+//    [self.scroller adjustScrollView];
+//}
 
 - (IBAction)dismiss:(UIGestureRecognizer *)recognizer
 {
