@@ -50,6 +50,7 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
     
     cell.imageView.image = image;
     
+    NSLog(@"Cell For Item At IndexPath %d, Collection View is %p \n", indexPath.item, collectionView);
     return cell;
 }
 
@@ -93,7 +94,15 @@ static const CGFloat kMinInterItemSpacing = 1.0;    // ignore
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat size = [PhotoCollectionCell preferredSizeInCluster];
-    return CGSizeMake(size, size);
+
+    CGFloat width, height;
+    width = size;
+    height = size;
+#if 0
+    width = arc4random() % 100 + 50;
+#endif
+    //NSLog(@"Size For Item At IndexPath %d is %.1f x %.1f, Collection View is %p \n", indexPath.item, width, height, collectionView);
+    return CGSizeMake(width, height);
 }
 
 //- (CGSize)collectionView:(UICollectionView *)collectionView
